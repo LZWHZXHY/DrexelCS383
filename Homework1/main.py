@@ -3,6 +3,7 @@ from sklearn.linear_model import LinearRegression
 from TheoryGraph import plot_j_vs_x1
 from ReadFile import print_result, THETA, rmse
 from Locally_weighted_regression import run_part3_locally_weighted_lr
+from Gradient_Descent import run_gradient_descent_regression
 
 X = np.array([-2, -5, -3, 0, -8, -2, 1, 5, -1, 6]).reshape(-1, 1)
 Y = np.array([1, -4, 1, 3, 11, 5, 0, -1, -3, 1]).reshape(-1, 1)
@@ -56,3 +57,5 @@ run_part3_locally_weighted_lr()
 print("==============================================")
 
 print("Gradient Descent:")
+
+run_gradient_descent_regression()
